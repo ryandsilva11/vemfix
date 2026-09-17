@@ -1,0 +1,6 @@
+/* ===================================================
+   POST.CSS - Estilos da criação de post
+   =================================================== */
+
+.upload-box { border: 2px dashed var(--gray-300); border-radius: var(--radius); padding: 28px; text-align: center; cursor: pointer; color: var(--gray-500); font-size: 14px; transition: 0.2s; }
+.upload-box:hover { border-color: var(--green); color: var(--green); background: var(--green-light); }

@@ -1,0 +1,96 @@
+/* ===================================================
+   GLOBAL.CSS - Estilos compartilhados em todo o site
+   =================================================== */
+
+/* Cores e variáveis do projeto */
+:root {
+  --green: #1a9e6e;
+  --green-dark: #138055;
+  --green-light: #e6f7f1;
+  --green-mid: #2dbe87;
+  --gray-100: #f7f8fa;
+  --gray-200: #eff1f5;
+  --gray-300: #dde1e9;
+  --gray-500: #8a93a6;
+  --gray-700: #4a5568;
+  --gray-900: #1a202c;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --radius-lg: 20px;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+/* Reset básico */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #fff; color: var(--gray-900); }
+h1, h2, h3, h4, h5 { font-family: 'Sora', sans-serif; }
+a { text-decoration: none; color: inherit; }
+
+/* Botões compartilhados */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  padding: 10px 22px; font-family: 'Sora', sans-serif; font-size: 14px; font-weight: 600;
+  border-radius: var(--radius-sm); border: none; cursor: pointer; transition: 0.2s;
+}
+.btn-primary { background: var(--green); color: #fff; }
+.btn-primary:hover { background: var(--green-dark); }
+.btn-secondary { background: #fff; color: var(--green); border: 2px solid var(--green); }
+.btn-secondary:hover { background: var(--green-light); }
+.btn-light { background: var(--green-light); color: var(--green); }
+.btn-light:hover { background: var(--green); color: #fff; }
+.btn-danger { background: rgba(239, 68, 68, 0.15); color: #ef4444; border: 1px solid #ef4444; }
+.btn-danger:hover { background: #ef4444; color: #fff; }
+.btn-sm { padding: 7px 16px; font-size: 13px; }
+.btn-full { width: 100%; }
+
+/* Barra de Navegação */
+nav {
+  position: sticky; top: 0; z-index: 500; height: 64px;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 40px; background: #fff; border-bottom: 1px solid var(--gray-200);
+}
+.nav-logo { display: flex; align-items: center; gap: 8px; font-family: 'Sora', sans-serif; font-weight: 800; font-size: 20px; color: var(--green); }
+.nav-logo .logo-icon { width: 32px; height: 32px; background: var(--green); color: #fff; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 16px; }
+.nav-links { display: flex; gap: 28px; }
+.nav-links a { color: var(--gray-700); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+.nav-links a:hover, .nav-links a.active { color: var(--green); }
+.nav-actions { display: flex; align-items: center; gap: 12px; }
+.search-icon-btn { font-size: 18px; padding: 4px 8px; cursor: pointer; }
+
+/* Botão Voltar */
+.back-btn { display: inline-flex; align-items: center; gap: 6px; color: var(--gray-500); font-size: 14px; margin: 20px 0 16px 40px; }
+.back-btn:hover { color: var(--green); }
+
+/* Containers e Cards de formulário */
+.page-container { max-width: 660px; margin: 36px auto; padding: 0 20px; }
+.card { background: #fff; border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 36px; box-shadow: var(--shadow-sm); }
+.card h1 { font-size: 28px; font-weight: 800; text-align: center; margin-bottom: 8px; }
+.card-sub { font-size: 14px; color: var(--gray-500); text-align: center; margin-bottom: 24px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+.form-group label { font-size: 13px; font-weight: 600; color: var(--gray-700); }
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%; border: 1px solid var(--gray-300); border-radius: var(--radius-sm);
+  padding: 11px 14px; font: 14px 'Inter', sans-serif; outline: none; background: #fff; transition: border 0.2s;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--green); }
+.form-group textarea { min-height: 100px; resize: vertical; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+/* Rodapé */
+footer { background: var(--gray-900); color: #fff; padding: 48px 40px; margin-top: 48px; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 32px; max-width: 1000px; margin: 0 auto; }
+.footer-brand .logo { display: flex; align-items: center; gap: 8px; font-family: 'Sora', sans-serif; font-weight: 800; font-size: 20px; margin-bottom: 10px; }
+.footer-brand p { font-size: 13px; color: #a0aec0; line-height: 1.6; }
+.footer-col h5 { font-size: 14px; font-weight: 700; margin-bottom: 14px; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.footer-col a { color: #a0aec0; font-size: 13px; transition: 0.2s; }
+.footer-col a:hover { color: #fff; }
+.footer-bottom { text-align: center; margin-top: 36px; padding-top: 20px; border-top: 1px solid #2d3748; font-size: 12px; color: #718096; }
+
+/* Responsivo geral da barra de navegação */
+@media (max-width: 768px) {
+  nav { padding: 0 16px; }
+  .nav-links { display: none; }
+  .back-btn { margin-left: 16px; }
+  .footer-grid, .form-row { grid-template-columns: 1fr; }
+}

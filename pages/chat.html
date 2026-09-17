@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VemFix – Chat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/chat.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="../index.html" class="nav-logo">
+    <div class="logo-icon">V</div>
+    VemFix
+  </a>
+  <div class="nav-links">
+    <a href="../index.html">Início</a>
+    <a href="busca.html">Busca</a>
+    <a href="garantias.html">Garantias</a>
+    <a href="suporte.html">Suporte</a>
+    <a href="conversas.html" class="active">Chat</a>
+  </div>
+  <div class="nav-actions">
+    <a href="busca.html" class="search-icon-btn" title="Buscar">🔍</a>
+    <a href="cadastro.html" class="btn btn-primary btn-sm">Cadastrar</a>
+  </div>
+</nav>
+
+<!-- CHAT -->
+<div class="chat-container">
+  <div class="chat-header">
+    <a href="conversas.html" style="font-size:18px;color:var(--gray-500);" title="Voltar">←</a>
+    <div class="av" style="background:#059669;">CS</div>
+    <div>
+      <h4>Carlos Silva</h4>
+      <p>Online</p>
+    </div>
+  </div>
+
+  <div class="chat-messages">
+    <div class="msg received">
+      <div class="bubble">Olá! Vi que você precisa de um encanador. Como posso ajudar?</div>
+      <div class="msg-time">09:15</div>
+    </div>
+    <div class="msg sent">
+      <div class="bubble">Oi Carlos! Tenho um vazamento na cozinha, embaixo da pia.</div>
+      <div class="msg-time">09:20</div>
+    </div>
+    <div class="msg received">
+      <div class="bubble">Entendi. Pelo que descreve, pode ser a conexão do sifão. Geralmente é um reparo simples.</div>
+      <div class="msg-time">09:32</div>
+    </div>
+    <div class="msg sent">
+      <div class="bubble">Que bom! Quanto ficaria mais ou menos?</div>
+      <div class="msg-time">09:45</div>
+    </div>
+    <div class="msg received">
+      <div class="bubble">Para esse tipo de reparo, fica entre R$80 e R$120, dependendo da peça necessária.</div>
+      <div class="msg-time">09:59</div>
+    </div>
+    <div class="msg received">
+      <div class="bubble">Posso ir amanhã às 14h, tudo bem?</div>
+      <div class="msg-time">10:32</div>
+    </div>
+  </div>
+
+  <div class="chat-input-bar">
+    <input class="chat-input" type="text" placeholder="Digite sua mensagem...">
+    <button type="button" class="chat-icon-btn" title="Anexar">📎</button>
+    <a href="orcamento.html" class="chat-icon-btn" title="Elaborar Orçamento">💲</a>
+    <button type="button" class="chat-icon-btn send" title="Enviar">▶</button>
+  </div>
+</div>
+
+</body>
+</html>
