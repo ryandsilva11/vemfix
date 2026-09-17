@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VemFix – Elaborar Orçamento</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+  <div class="container-fluid">
+    <a class="nav-logo text-decoration-none" href="index.html">
+      <div class="logo-icon">V</div>
+      VemFix
+    </a>
+    <div class="nav-links">
+      <a href="index.html" id="nav-home">Início</a>
+      <a href="busca.html" id="nav-busca">Busca</a>
+      <a href="garantias.html" id="nav-garantias">Garantias</a>
+      <a href="suporte.html" id="nav-suporte">Suporte</a>
+      <a href="conversas.html" id="nav-conversas">Chat</a>
+    </div>
+    <div class="nav-actions">
+      <a href="busca.html" class="nav-search-btn btn btn-outline-secondary" title="Buscar">🔍</a>
+      <a href="cadastro.html" class="btn-cadastrar btn btn-success text-decoration-none">Cadastrar</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================================================== -->
+<!--  PÁGINA DE ORÇAMENTO                                  -->
+<!-- ===================================================== -->
+<div class="page" id="page-orcamento">
+  <a href="chat.html" class="back-btn text-decoration-none">← Voltar</a>
+  <div class="orcamento-page">
+    <div class="orcamento-card">
+      <h1>Elaborar Orçamento</h1>
+      <p class="orcamento-subtitle">Preencha os dados do orçamento para o cliente</p>
+      <form class="orcamento-form" onsubmit="return false;">
+        <div class="form-group">
+          <label>Título do Orçamento</label>
+          <input type="text" placeholder="Insira o Título">
+        </div>
+        <div class="orcamento-row">
+          <div class="form-group" style="flex:1;">
+            <label>Data</label>
+            <input type="date" placeholder="Data">
+          </div>
+          <div class="form-group" style="flex:1;">
+            <label>Nome do Cliente</label>
+            <input type="text" placeholder="Nome do cliente">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Endereço do Cliente</label>
+          <input type="text" placeholder="Endereço do cliente">
+        </div>
+        <div class="form-group">
+          <label>Valor Estimado (R$)</label>
+          <input type="text" placeholder="Valor estimado">
+        </div>
+        <div class="form-group">
+          <label>Fotos e Vídeos do Problema</label>
+          <div class="orcamento-imgs">
+            <div class="orcamento-img-box" style="cursor:pointer;">🖼️</div>
+            <div class="orcamento-img-box" style="cursor:pointer;">＋</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Descrição do Problema</label>
+          <textarea placeholder="Detalhe o problema do cliente..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Descrição do Serviço</label>
+          <textarea placeholder="Detalhe o que planeja para resolver o problema..."></textarea>
+        </div>
+        <div class="orcamento-actions">
+          <a href="chat.html" class="btn-primary text-decoration-none text-center d-flex align-items-center justify-content-center" style="flex:1;">Enviar</a>
+          <a href="conversas.html" class="btn-secondary text-decoration-none text-center d-flex align-items-center justify-content-center" style="flex:1;">Salvar</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
