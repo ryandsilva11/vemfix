@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 export default function Navbar() {
     return (
         <nav>
@@ -6,8 +7,8 @@ export default function Navbar() {
                 VemFix
             </a>
             <div className="nav-links">
-                <a href="index.html" className="active">Início</a>
-                <a href="pages/busca.html">Busca</a>
+                <Link to="/">Início</Link>
+                <Link to="/Busca">Busca</Link>
                 <a href="pages/suporte.html">Suporte</a>
                 <a href="pages/conversas.html">Chat</a>
             </div>
