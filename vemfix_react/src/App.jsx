@@ -1,11 +1,13 @@
 import Navbar from './componentes/Navbar.jsx'
-import Busca from './componentes/Busca.jsx'
+import Footer from './componentes/Footer.jsx'
+import Home from './componentes/Home.jsx'
 export default function App() {
 
   return (
     <>
       <Navbar />
-      <Busca />
+      <Home />
+      <Footer />
     </>
   )
 
