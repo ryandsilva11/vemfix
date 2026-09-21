@@ -85,32 +85,6 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="section">
-                <h2 className="section-title">Sua Segurança é nossa prioridade</h2>
-                <div className="security-grid">
-                    <div className="security-card">
-                        <div className="sc-icon">🛡️</div>
-                        <h4>Garantia Contra Danos</h4>
-                        <p>A VemFix assume responsabilidade quando um prestador cadastrado causa danos à propriedade do cliente durante a execução de um serviço contratado pela plataforma.</p>
-                    </div>
-                    <div className="security-card">
-                        <div className="sc-icon">💰</div>
-                        <h4>Reembolso Garantido</h4>
-                        <p>Todo dinheiro depositado na plataforma pode ser devolvido conforme as condições da nossa política de reembolso, processada em até 7 dias úteis.</p>
-                    </div>
-                    <div className="security-card">
-                        <div className="sc-icon">⭐</div>
-                        <h4>Avaliações Verificadas</h4>
-                        <p>Todas as avaliações são de clientes que realmente contrataram o serviço. Transparência total para você tomar a melhor decisão.</p>
-                    </div>
-                    <div className="security-card">
-                        <div className="sc-icon">✅</div>
-                        <h4>Prestadores Verificados</h4>
-                        <p>Todos os prestadores passam por verificação de identidade e histórico antes de serem listados na plataforma.</p>
-                    </div>
-                </div>
-            </section>
-
             <section className="section" style={{ background: 'var(--gray-100)' }}>
                 <h2 className="section-title">Profissionais em Destaque</h2>
                 <div className="section-sub">Altamente avaliados pela comunidade</div>
