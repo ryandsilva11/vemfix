@@ -10,7 +10,7 @@ export default function Navbar() {
                 <Link to="/">Início</Link>
                 <Link to="/Busca">Busca</Link>
                 <Link to="/Suporte">Suporte</Link>
-                <a href="pages/conversas.html">Chat</a>
+                <Link to="/Conversa">Conversas</Link>
             </div>
             <div className="nav-actions">
                 <a href="pages/busca.html" className="search-icon-btn" title="Buscar">🔍</a>

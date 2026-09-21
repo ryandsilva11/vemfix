@@ -2,26 +2,100 @@
    SUPORTE.CSS - Estilos da página de Suporte e FAQ
    =================================================== */
 
-.info-page { padding: 36px 40px; max-width: 860px; margin: 0 auto; }
-.info-page h1 { font-size: 30px; font-weight: 800; margin-bottom: 6px; }
-.info-page .subtitle { color: var(--gray-500); margin-bottom: 28px; font-size: 15px; }
+.info-page {
+  padding: 36px 40px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.info-page h1 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.info-page .subtitle {
+  color: var(--gray-500);
+  margin-bottom: 28px;
+  font-size: 15px;
+}
 
 /* FAQ Sanfona */
-.faq-section { margin-bottom: 36px; }
-.faq-section h2 { font-size: 20px; font-weight: 700; margin-bottom: 16px; }
-.faq-item { border: 1px solid var(--gray-200); border-radius: var(--radius-sm); margin-bottom: 10px; overflow: hidden; }
-.faq-question { display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; cursor: pointer; font-size: 14px; font-weight: 600; background: #fff; list-style: none; }
-.faq-question::-webkit-details-marker { display: none; }
-.faq-question:hover { background: var(--gray-100); }
-.faq-answer { padding: 0 18px 14px; font-size: 14px; color: var(--gray-700); line-height: 1.6; }
-.faq-arrow { transition: transform 0.2s; font-size: 12px; }
-details[open] .faq-arrow { transform: rotate(180deg); }
+.faq-section {
+  margin-bottom: 36px;
+}
+
+.faq-section h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.faq-item {
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  background: #fff;
+  list-style: none;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question:hover {
+  background: var(--gray-100);
+}
+
+.faq-answer {
+  padding: 0 18px 14px;
+  font-size: 14px;
+  color: var(--gray-700);
+  line-height: 1.6;
+}
+
+.faq-arrow {
+  transition: transform 0.2s;
+  font-size: 12px;
+}
+
+details[open] .faq-arrow {
+  transform: rotate(180deg);
+}
 
 /* Bloco Fale Conosco */
-.contact-box { background: #fff; border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 28px; }
-.contact-box h2 { font-size: 20px; font-weight: 700; margin-bottom: 4px; }
-.contact-box .sub { font-size: 13px; color: var(--gray-500); margin-bottom: 20px; }
+.contact-box {
+  background: #fff;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  padding: 28px;
+}
+
+.contact-box h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.contact-box .sub {
+  font-size: 13px;
+  color: var(--gray-500);
+  margin-bottom: 20px;
+}
 
 @media (max-width: 768px) {
-  .info-page { padding: 16px; }
+  .info-page {
+    padding: 16px;
+  }
 }

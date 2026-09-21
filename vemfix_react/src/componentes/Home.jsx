@@ -11,7 +11,6 @@ export default function Home() {
                     <a href="pages/cadastro.html" className="btn btn-secondary">Cadastrar Agora</a>
                 </div>
                 <div class="hero-badges">
-                    <div>🛡️ Garantia contra danos</div>
                     <div>⭐ Avaliações protegidas</div>
                     <div>💬 Suporte 24h</div>
                 </div>

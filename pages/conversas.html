@@ -1,69 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VemFix – Conversas</title>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/conversas.css">
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<nav>
-  <a href="../index.html" class="nav-logo">
-    <div class="logo-icon">V</div>
-    VemFix
-  </a>
-  <div class="nav-links">
-    <a href="../index.html">Início</a>
-    <a href="busca.html">Busca</a>
-    <a href="garantias.html">Garantias</a>
-    <a href="suporte.html">Suporte</a>
-    <a href="conversas.html" class="active">Chat</a>
+  <!-- NAVBAR -->
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <div class="logo-icon">V</div>
+      VemFix
+    </a>
+    <div class="nav-links">
+      <a href="../index.html">Início</a>
+      <a href="busca.html">Busca</a>
+      <a href="garantias.html">Garantias</a>
+      <a href="suporte.html">Suporte</a>
+      <a href="conversas.html" class="active">Chat</a>
+    </div>
+    <div class="nav-actions">
+      <a href="busca.html" class="search-icon-btn" title="Buscar">🔍</a>
+      <a href="cadastro.html" class="btn btn-primary btn-sm">Cadastrar</a>
+    </div>
+  </nav>
+
+  <!-- CONVERSAS -->
+  <div class="conversas-list">
+    <h1>Conversas</h1>
+
+    <div class="conversa-item">
+      <div class="conversa-av" style="background:#dc2626;">PA</div>
+      <div class="conversa-info">
+        <div class="time">10:18</div>
+        <h4>Pedro Almeida</h4>
+        <p>Pedro Almeida quer começar uma conversa com você. Tipo: <strong>Encanador</strong></p>
+      </div>
+      <div class="conversa-actions">
+        <a href="chat.html" class="conv-btn accept" title="Aceitar">✓</a>
+        <button type="button" class="conv-btn deny" title="Recusar">🚫</button>
+      </div>
+    </div>
+
+    <a href="chat.html" class="conversa-item">
+      <div class="conversa-av" style="background:#059669;">LF</div>
+      <div class="conversa-info">
+        <div class="time">19:41</div>
+        <h4>Lucia Ferreira</h4>
+        <p>Perfeito! Confirmado para sexta.</p>
+      </div>
+    </a>
+
+    <a href="chat.html" class="conversa-item">
+      <div class="conversa-av" style="background:#7c3aed;">MC</div>
+      <div class="conversa-info">
+        <div class="time">08:30</div>
+        <h4>Mariana Costa</h4>
+        <p>Olá! Posso ir amanhã às 14h. Fica bem?</p>
+      </div>
+    </a>
   </div>
-  <div class="nav-actions">
-    <a href="busca.html" class="search-icon-btn" title="Buscar">🔍</a>
-    <a href="cadastro.html" class="btn btn-primary btn-sm">Cadastrar</a>
-  </div>
-</nav>
-
-<!-- CONVERSAS -->
-<div class="conversas-list">
-  <h1>Conversas</h1>
-
-  <div class="conversa-item">
-    <div class="conversa-av" style="background:#dc2626;">PA</div>
-    <div class="conversa-info">
-      <div class="time">10:18</div>
-      <h4>Pedro Almeida</h4>
-      <p>Pedro Almeida quer começar uma conversa com você. Tipo: <strong>Encanador</strong></p>
-    </div>
-    <div class="conversa-actions">
-      <a href="chat.html" class="conv-btn accept" title="Aceitar">✓</a>
-      <button type="button" class="conv-btn deny" title="Recusar">🚫</button>
-    </div>
-  </div>
-
-  <a href="chat.html" class="conversa-item">
-    <div class="conversa-av" style="background:#059669;">LF</div>
-    <div class="conversa-info">
-      <div class="time">19:41</div>
-      <h4>Lucia Ferreira</h4>
-      <p>Perfeito! Confirmado para sexta.</p>
-    </div>
-  </a>
-
-  <a href="chat.html" class="conversa-item">
-    <div class="conversa-av" style="background:#7c3aed;">MC</div>
-    <div class="conversa-info">
-      <div class="time">08:30</div>
-      <h4>Mariana Costa</h4>
-      <p>Olá! Posso ir amanhã às 14h. Fica bem?</p>
-    </div>
-  </a>
-</div>
 
 </body>
+
 </html>

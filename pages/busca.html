@@ -1,168 +1,175 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VemFix – Busca e Feed</title>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/busca.css">
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<nav>
-  <a href="../index.html" class="nav-logo">
-    <div class="logo-icon">V</div>
-    VemFix
-  </a>
-  <div class="nav-links">
-    <a href="../index.html">Início</a>
-    <a href="busca.html" class="active">Busca</a>
-    <a href="garantias.html">Garantias</a>
-    <a href="suporte.html">Suporte</a>
-    <a href="conversas.html">Chat</a>
-  </div>
-  <div class="nav-actions">
-    <a href="busca.html" class="search-icon-btn" title="Buscar">🔍</a>
-    <a href="cadastro.html" class="btn btn-primary btn-sm">Cadastrar</a>
-  </div>
-</nav>
+  <!-- NAVBAR -->
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <div class="logo-icon">V</div>
+      VemFix
+    </a>
+    <div class="nav-links">
+      <a href="../index.html">Início</a>
+      <a href="busca.html" class="active">Busca</a>
+      <a href="garantias.html">Garantias</a>
+      <a href="suporte.html">Suporte</a>
+      <a href="conversas.html">Chat</a>
+    </div>
+    <div class="nav-actions">
+      <a href="busca.html" class="search-icon-btn" title="Buscar">🔍</a>
+      <a href="cadastro.html" class="btn btn-primary btn-sm">Cadastrar</a>
+    </div>
+  </nav>
 
-<!-- FEED HEADER -->
-<div class="feed-header">
-  <div class="search-input-wrap">
-    <span>🔍</span>
-    <input type="text" placeholder="Buscar por posts ou prestadores">
-  </div>
-  <div style="display:flex;align-items:center;gap:10px;">
-    <label for="tipo-select" style="font-size:13px;color:var(--gray-700);font-weight:600;">Tipo</label>
-    <select id="tipo-select" style="border:1px solid var(--gray-300);border-radius:var(--radius-sm);padding:8px 12px;background:#fff;font-size:13px;">
-      <option value="">Todos</option>
-      <option value="Encanador">Encanador</option>
-      <option value="Eletricista">Eletricista</option>
-      <option value="Pintor">Pintor</option>
-      <option value="Jardineiro">Jardineiro</option>
-      <option value="Limpeza">Limpeza</option>
-      <option value="Pedreiro">Pedreiro</option>
-      <option value="Ar condicionado">Ar condicionado</option>
-      <option value="Chaveiro">Chaveiro</option>
-    </select>
-  </div>
-  <div class="filter-chips">
-    <div class="chip active">Todas as categorias</div>
-    <div class="chip">Melhor Avaliação</div>
-    <div class="chip">❤️ Favoritos</div>
-    <div class="chip">🔧 Encanador</div>
-    <div class="chip">🧱 Pedreiro</div>
-    <div class="chip">🎨 Pintor</div>
-    <div class="chip">🛠️ Eletricista</div>
-  </div>
-</div>
-
-<!-- DESTAQUES -->
-<div class="feed-top-pros">
-  <a href="perfil.html" class="top-pro-chip">
-    <div class="av" style="background:#059669;">LF</div>
-    <div>
-      <strong>Lucia Ferreira</strong>
-      <span style="color:var(--gray-500);">Limpeza – Salto</span>
+  <!-- FEED HEADER -->
+  <div class="feed-header">
+    <div class="search-input-wrap">
+      <span>🔍</span>
+      <input type="text" placeholder="Buscar por posts ou prestadores">
     </div>
-    <span style="color:#f59e0b;font-weight:700;">★ 5.0</span>
-  </a>
-  <a href="perfil.html" class="top-pro-chip">
-    <div class="av" style="background:#059669;">CS</div>
-    <div>
-      <strong>Carlos Silva</strong>
-      <span style="color:var(--gray-500);">Encanador – SP</span>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <label for="tipo-select" style="font-size:13px;color:var(--gray-700);font-weight:600;">Tipo</label>
+      <select id="tipo-select"
+        style="border:1px solid var(--gray-300);border-radius:var(--radius-sm);padding:8px 12px;background:#fff;font-size:13px;">
+        <option value="">Todos</option>
+        <option value="Encanador">Encanador</option>
+        <option value="Eletricista">Eletricista</option>
+        <option value="Pintor">Pintor</option>
+        <option value="Jardineiro">Jardineiro</option>
+        <option value="Limpeza">Limpeza</option>
+        <option value="Pedreiro">Pedreiro</option>
+        <option value="Ar condicionado">Ar condicionado</option>
+        <option value="Chaveiro">Chaveiro</option>
+      </select>
     </div>
-    <span style="color:#f59e0b;font-weight:700;">★ 5.0</span>
-  </a>
-  <a href="perfil.html" class="top-pro-chip">
-    <div class="av" style="background:#7c3aed;">MC</div>
-    <div>
-      <strong>Mariana Costa</strong>
-      <span style="color:var(--gray-500);">Jardineiro – Curitiba</span>
-    </div>
-    <span style="color:#f59e0b;font-weight:700;">★ 5.0</span>
-  </a>
-  <a href="perfil.html" class="top-pro-chip">
-    <div class="av" style="background:#dc2626;">PA</div>
-    <div>
-      <strong>Pedro Almeida</strong>
-      <span style="color:var(--gray-500);">Pedreiro – BH</span>
-    </div>
-    <span style="color:#f59e0b;font-weight:700;">★ 4.6</span>
-  </a>
-  <a href="perfil.html" class="top-pro-chip">
-    <div class="av" style="background:#d97706;">AR</div>
-    <div>
-      <strong>Ana Rodrigues</strong>
-      <span style="color:var(--gray-500);">Eletricista – SP</span>
-    </div>
-    <span style="color:#f59e0b;font-weight:700;">★ 4.8</span>
-  </a>
-</div>
-
-<!-- FEED POSTS -->
-<div class="feed-list">
-  <div class="feed-post">
-    <div class="post-header">
-      <div class="av" style="background:#dc2626;">PA</div>
-      <div class="info">
-        <h4>Pedro Almeida</h4>
-        <p>Pedreiro – Belo Horizonte</p>
-      </div>
-      <div class="rating">★ 4.6</div>
-    </div>
-    <div class="post-caption">Mais um trabalho realizado com sucesso! Reforma de muro com acabamento impecável. 💪🏗️</div>
-    <div class="post-img">🏗️</div>
-    <div class="post-actions">
-      <button type="button">♡ 993.456</button>
-      <a href="perfil.html">↗ Visitar perfil</a>
-      <a href="chat.html">💬 Contatar</a>
+    <div class="filter-chips">
+      <div class="chip active">Todas as categorias</div>
+      <div class="chip">Melhor Avaliação</div>
+      <div class="chip">❤️ Favoritos</div>
+      <div class="chip">🔧 Encanador</div>
+      <div class="chip">🧱 Pedreiro</div>
+      <div class="chip">🎨 Pintor</div>
+      <div class="chip">🛠️ Eletricista</div>
     </div>
   </div>
 
-  <div class="feed-post">
-    <div class="post-header">
+  <!-- DESTAQUES -->
+  <div class="feed-top-pros">
+    <a href="perfil.html" class="top-pro-chip">
       <div class="av" style="background:#059669;">LF</div>
-      <div class="info">
-        <h4>Lucia Ferreira</h4>
-        <p>Limpeza – Salto</p>
+      <div>
+        <strong>Lucia Ferreira</strong>
+        <span style="color:var(--gray-500);">Limpeza – Salto</span>
       </div>
-      <div class="rating">★ 5.0</div>
-    </div>
-    <div class="post-caption">Limpeza pós-obra finalizada! Cliente muito satisfeito. Contrate agora! 🧹✨</div>
-    <div class="post-img" style="background:#d1fae5;">🧹</div>
-    <div class="post-actions">
-      <button type="button">♡ 12.340</button>
-      <a href="perfil.html">↗ Visitar perfil</a>
-      <a href="chat.html">💬 Contatar</a>
-    </div>
-  </div>
-
-  <div class="feed-post">
-    <div class="post-header">
+      <span style="color:#f59e0b;font-weight:700;">★ 5.0</span>
+    </a>
+    <a href="perfil.html" class="top-pro-chip">
+      <div class="av" style="background:#059669;">CS</div>
+      <div>
+        <strong>Carlos Silva</strong>
+        <span style="color:var(--gray-500);">Encanador – SP</span>
+      </div>
+      <span style="color:#f59e0b;font-weight:700;">★ 5.0</span>
+    </a>
+    <a href="perfil.html" class="top-pro-chip">
       <div class="av" style="background:#7c3aed;">MC</div>
-      <div class="info">
-        <h4>Mariana Costa</h4>
-        <p>Jardineiro – Curitiba</p>
+      <div>
+        <strong>Mariana Costa</strong>
+        <span style="color:var(--gray-500);">Jardineiro – Curitiba</span>
       </div>
-      <div class="rating">★ 5.0</div>
+      <span style="color:#f59e0b;font-weight:700;">★ 5.0</span>
+    </a>
+    <a href="perfil.html" class="top-pro-chip">
+      <div class="av" style="background:#dc2626;">PA</div>
+      <div>
+        <strong>Pedro Almeida</strong>
+        <span style="color:var(--gray-500);">Pedreiro – BH</span>
+      </div>
+      <span style="color:#f59e0b;font-weight:700;">★ 4.6</span>
+    </a>
+    <a href="perfil.html" class="top-pro-chip">
+      <div class="av" style="background:#d97706;">AR</div>
+      <div>
+        <strong>Ana Rodrigues</strong>
+        <span style="color:var(--gray-500);">Eletricista – SP</span>
+      </div>
+      <span style="color:#f59e0b;font-weight:700;">★ 4.8</span>
+    </a>
+  </div>
+
+  <!-- FEED POSTS -->
+  <div class="feed-list">
+    <div class="feed-post">
+      <div class="post-header">
+        <div class="av" style="background:#dc2626;">PA</div>
+        <div class="info">
+          <h4>Pedro Almeida</h4>
+          <p>Pedreiro – Belo Horizonte</p>
+        </div>
+        <div class="rating">★ 4.6</div>
+      </div>
+      <div class="post-caption">Mais um trabalho realizado com sucesso! Reforma de muro com acabamento impecável. 💪🏗️
+      </div>
+      <div class="post-img">🏗️</div>
+      <div class="post-actions">
+        <button type="button">♡ 993.456</button>
+        <a href="perfil.html">↗ Visitar perfil</a>
+        <a href="chat.html">💬 Contatar</a>
+      </div>
     </div>
-    <div class="post-caption">Jardim transformado! Projeto completo de paisagismo residencial. 🌿🌸</div>
-    <div class="post-img" style="background:#d1fae5;">🌿</div>
-    <div class="post-actions">
-      <button type="button">♡ 8.700</button>
-      <a href="perfil.html">↗ Visitar perfil</a>
-      <a href="chat.html">💬 Contatar</a>
+
+    <div class="feed-post">
+      <div class="post-header">
+        <div class="av" style="background:#059669;">LF</div>
+        <div class="info">
+          <h4>Lucia Ferreira</h4>
+          <p>Limpeza – Salto</p>
+        </div>
+        <div class="rating">★ 5.0</div>
+      </div>
+      <div class="post-caption">Limpeza pós-obra finalizada! Cliente muito satisfeito. Contrate agora! 🧹✨</div>
+      <div class="post-img" style="background:#d1fae5;">🧹</div>
+      <div class="post-actions">
+        <button type="button">♡ 12.340</button>
+        <a href="perfil.html">↗ Visitar perfil</a>
+        <a href="chat.html">💬 Contatar</a>
+      </div>
+    </div>
+
+    <div class="feed-post">
+      <div class="post-header">
+        <div class="av" style="background:#7c3aed;">MC</div>
+        <div class="info">
+          <h4>Mariana Costa</h4>
+          <p>Jardineiro – Curitiba</p>
+        </div>
+        <div class="rating">★ 5.0</div>
+      </div>
+      <div class="post-caption">Jardim transformado! Projeto completo de paisagismo residencial. 🌿🌸</div>
+      <div class="post-img" style="background:#d1fae5;">🌿</div>
+      <div class="post-actions">
+        <button type="button">♡ 8.700</button>
+        <a href="perfil.html">↗ Visitar perfil</a>
+        <a href="chat.html">💬 Contatar</a>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- FAB NOVO POST -->
-<a href="post.html" class="fab" title="Novo post">＋</a>
+  <!-- FAB NOVO POST -->
+  <a href="post.html" className="fab" title="Novo post">＋</a>
 
 </body>
+
 </html>
