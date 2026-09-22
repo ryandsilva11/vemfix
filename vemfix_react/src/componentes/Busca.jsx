@@ -1,6 +1,7 @@
 import "./css/Busca.css"
 import DestaqueBusca from "./DestaqueBusca"
 import Post from "./Post"
+import { Link } from 'react-router-dom'
 export default function Busca() {
     return (
         <div>
@@ -35,24 +36,24 @@ export default function Busca() {
             </div>
 
             <div className="feed-top-pros">
-                <DestaqueBusca cor="#059669" sigla="LF" nome="Lucia Ferreira" servico="Limpeza" cidade="Salto" avaliacao="5.0" />
-                <DestaqueBusca cor="#f59e0b" sigla="JP" nome="João Pedro" servico="Eletricista" cidade="Jundiaí" avaliacao="4.8" />
-                <DestaqueBusca cor="#8b5cf6" sigla="MR" nome="Marcos Rodrigues" servico="Encanador" cidade="Indaiatuba" avaliacao="4.5" />
-                <DestaqueBusca cor="#ec4899" sigla="CL" nome="Carla Lima" servico="Pedreiro" cidade="Itupeva" avaliacao="4.9" />
-                <DestaqueBusca cor="#10b981" sigla="GM" nome="Gabriel Mendes" servico="Jardineiro" cidade="Campinas" avaliacao="4.2" />
-                <DestaqueBusca cor="#f59e0b" sigla="BR" nome="Bruno Rodrigues" servico="Pintor" cidade="Hortolândia" avaliacao="4.7" />
+                <Link to='/Perfil'><DestaqueBusca cor="#059669" sigla="LF" nome="Lucia Ferreira" servico="Limpeza" cidade="Salto" avaliacao="5.0" /></Link>
+                <Link to='/Perfil'><DestaqueBusca cor="#f59e0b" sigla="JP" nome="João Pedro" servico="Eletricista" cidade="Jundiaí" avaliacao="4.8" /></Link>
+                <Link to='/Perfil'><DestaqueBusca cor="#8b5cf6" sigla="MR" nome="Marcos Rodrigues" servico="Encanador" cidade="Indaiatuba" avaliacao="4.5" /></Link>
+                <Link to='/Perfil'><DestaqueBusca cor="#ec4899" sigla="CL" nome="Carla Lima" servico="Pedreiro" cidade="Itupeva" avaliacao="4.9" /></Link>
+                <Link to='/Perfil'><DestaqueBusca cor="#10b981" sigla="GM" nome="Gabriel Mendes" servico="Jardineiro" cidade="Campinas" avaliacao="4.2" /></Link>
+                <Link to='/Perfil'><DestaqueBusca cor="#f59e0b" sigla="BR" nome="Bruno Rodrigues" servico="Pintor" cidade="Hortolândia" avaliacao="4.7" /></Link>
             </div>
 
             <div className="feed-list">
-                <Post corSigla="#059669" sigla="LF" nome="Lucia Ferreira" servico="Limpeza" cidade="Salto" avaliacao="5.0" titulo="limpeza de vidros" corBackground="#10b981" icone="🪟" />
-                <Post corSigla="#f59e0b" sigla="JP" nome="João Pedro" servico="Eletricista" cidade="Jundiaí" avaliacao="4.8" titulo="troca de chuveiro" corBackground="#f59e0b" icone="⚡" />
-                <Post corSigla="#8b5cf6" sigla="MR" nome="Marcos Rodrigues" servico="Encanador" cidade="Indaiatuba" avaliacao="4.5" titulo="conserto de torneira" corBackground="#8b5cf6" icone="🔧" />
-                <Post corSigla="#ec4899" sigla="CL" nome="Carla Lima" servico="Pedreiro" cidade="Itupeva" avaliacao="4.9" titulo="pequenas reformas" corBackground="#ec4899" icone="🧱" />
-                <Post corSigla="#10b981" sigla="GM" nome="Gabriel Mendes" servico="Jardineiro" cidade="Campinas" avaliacao="4.2" titulo="manutenção de jardins" corBackground="#10b981" icone="🌱" />
+                <Link to='/Perfil'><Post corSigla="#059669" sigla="LF" nome="Lucia Ferreira" servico="Limpeza" cidade="Salto" avaliacao="5.0" titulo="limpeza de vidros" corBackground="#10b981" icone="🪟" /></Link>
+                <Link to='/Perfil'><Post corSigla="#f59e0b" sigla="JP" nome="João Pedro" servico="Eletricista" cidade="Jundiaí" avaliacao="4.8" titulo="troca de chuveiro" corBackground="#f59e0b" icone="⚡" /></Link>
+                <Link to='/Perfil'><Post corSigla="#8b5cf6" sigla="MR" nome="Marcos Rodrigues" servico="Encanador" cidade="Indaiatuba" avaliacao="4.5" titulo="conserto de torneira" corBackground="#8b5cf6" icone="🔧" /></Link>
+                <Link to='/Perfil'><Post corSigla="#ec4899" sigla="CL" nome="Carla Lima" servico="Pedreiro" cidade="Itupeva" avaliacao="4.9" titulo="pequenas reformas" corBackground="#ec4899" icone="🧱" /></Link>
+                <Link to='/Perfil'><Post corSigla="#10b981" sigla="GM" nome="Gabriel Mendes" servico="Jardineiro" cidade="Campinas" avaliacao="4.2" titulo="manutenção de jardins" corBackground="#10b981" icone="🌱" /></Link>
                 <Post corSigla="#f59e0b" sigla="BR" nome="Bruno Rodrigues" servico="Pintor" cidade="Hortolândia" avaliacao="4.7" titulo="pintura de paredes" corBackground="#f59e0b" icone="🎨" />
             </div>
 
-            <a href="post.html" className="fab" title="Novo post">＋</a>
+            <Link to='/Post' className="fab" title="Novo post">＋</Link>
 
 
         </div>

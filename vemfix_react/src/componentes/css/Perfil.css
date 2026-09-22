@@ -1,0 +1,110 @@
+/* ===================================================
+   PERFIL.CSS - Estilos do perfil público do prestador
+   =================================================== */
+
+.perfil-container {
+    max-width: 740px;
+    margin: 24px auto;
+    padding: 0 20px;
+}
+
+.perfil-banner {
+    background: linear-gradient(135deg, var(--green) 0%, var(--green-mid) 100%);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.perfil-avatar {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.2);
+    flex-shrink: 0;
+}
+
+.perfil-banner h2 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.perfil-banner .meta {
+    font-size: 13px;
+    opacity: 0.9;
+    margin-top: 4px;
+}
+
+.perfil-banner .rating {
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.perfil-card {
+    background: #fff;
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+    padding: 22px;
+    margin-bottom: 16px;
+}
+
+.perfil-card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.review {
+    border-bottom: 1px solid var(--gray-100);
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+.review:last-child {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.review-stars {
+    color: #f59e0b;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.review-text {
+    font-size: 13px;
+    color: var(--gray-700);
+    line-height: 1.5;
+}
+
+.review-meta {
+    font-size: 11px;
+    color: var(--gray-500);
+    margin-top: 4px;
+}
+
+.perfil-protected {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--green-light);
+    border-radius: var(--radius-sm);
+    padding: 14px 18px;
+}
+
+@media (max-width: 768px) {
+    .perfil-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+}

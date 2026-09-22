@@ -6,6 +6,10 @@ import Busca from './componentes/Busca.jsx'
 import Conversa from './componentes/Conversa.jsx'
 import Suporte from './componentes/Suporte.jsx'
 import Chat from './componentes/Chat.jsx'
+import Perfil from './componentes/Perfil.jsx'
+import Post from './componentes/PostDo.jsx'
+import Orcamento from './componentes/Orcamento.jsx'
+import Cadastro from './componentes/Cadastro.jsx'
 export default function App() {
 
   return (
@@ -17,6 +21,10 @@ export default function App() {
         <Route path="/Suporte" element={<Suporte />} />
         <Route path="/Conversa" element={<Conversa />} />
         <Route path="/Chat" element={<Chat />} />
+        <Route path="/Perfil" element={<Perfil />}></Route>
+        <Route path="/Post" element={<Post />} />
+        <Route path="/Orcamento" element={<Orcamento />} />
+        <Route path="/Cadastro" element={<Cadastro />} />
       </Routes>
       <Footer />
     </BrowserRouter>

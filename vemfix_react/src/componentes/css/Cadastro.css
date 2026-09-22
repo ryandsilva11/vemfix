@@ -1,0 +1,72 @@
+/* ===================================================
+   CADASTRO.CSS - Estilos da alternância de abas de cadastro
+   =================================================== */
+
+.tabs {
+    display: flex;
+    background: var(--gray-100);
+    border-radius: var(--radius-sm);
+    padding: 4px;
+    margin-bottom: 24px;
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--gray-500);
+    transition: 0.2s;
+}
+
+/* Alternância entre Sou Cliente e Sou Prestador via CSS puro */
+#tab-opt-c:checked~.tabs label[for="tab-opt-c"],
+#tab-opt-p:checked~.tabs label[for="tab-opt-p"] {
+    background: #fff;
+    color: var(--green);
+    box-shadow: var(--shadow-sm);
+}
+
+#tab-opt-c:checked~#tab-c {
+    display: block;
+}
+
+#tab-opt-c:checked~#tab-p {
+    display: none;
+}
+
+#tab-opt-p:checked~#tab-c {
+    display: none;
+}
+
+#tab-opt-p:checked~#tab-p {
+    display: block;
+}
+
+.form-terms {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--gray-700);
+    margin: 12px 0 20px;
+}
+
+.form-terms a {
+    color: var(--green);
+}
+
+.form-footer {
+    text-align: center;
+    font-size: 13px;
+    color: var(--gray-500);
+    margin-top: 16px;
+}
+
+.form-footer a {
+    color: var(--green);
+    font-weight: 600;
+}

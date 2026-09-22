@@ -1,4 +1,5 @@
 import './css/Home.css'
+import { Link } from 'react-router-dom'
 
 export default function Home() {
     return (
@@ -7,8 +8,8 @@ export default function Home() {
                 <h1>Encontre o profissional ideal</h1>
                 <p>Conectamos você aos melhores prestadores de serviço da sua região, com praticidade, qualidade e proteção total.</p>
                 <div className="hero-btns">
-                    <a href="pages/busca.html" className="btn btn-primary">Começar Agora</a>
-                    <a href="pages/cadastro.html" className="btn btn-secondary">Cadastrar Agora</a>
+                    <Link to="/Cadastro" className="btn btn-primary">Começar Agora</Link>
+                    <Link to="/Cadastro" className="btn btn-secondary">Cadastrar Agora</Link>
                 </div>
                 <div class="hero-badges">
                     <div>⭐ Avaliações protegidas</div>

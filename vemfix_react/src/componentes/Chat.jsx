@@ -21,12 +21,12 @@ export default function Chat() {
                 <MessageReci msg="Para esse tipo de reparo, fica entre R$80 e R$120, dependendo da peça necessária." hora="09:15" />
                 <MessageReci msg="Posso ir amanhã às 14h, tudo bem?" hora="09:20" />
             </div>
-            <div class="chat-input-bar">
-                <input class="chat-input" type="text" placeholder="Digite sua mensagem..." />
-                <button type="button" class="chat-icon-btn" title="Anexar">📎</button>
-                <a href="orcamento.html" class="chat-icon-btn" title="Elaborar Orçamento">💲</a>
-                <button type="button" class="chat-icon-btn send" title="Enviar">▶</button>
+            <div className="chat-input-bar">
+                <input className="chat-input" type="text" placeholder="Digite sua mensagem..." />
+                <button type="button" className="chat-icon-btn" title="Anexar">📎</button>
+                <Link to="/Orcamento" className="chat-icon-btn" title="Elaborar Orçamento">💲</Link>
+                <button type="button" className="chat-icon-btn send" title="Enviar">▶</button>
             </div>
         </div>
     )
-}
+} ''
