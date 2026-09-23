@@ -28,7 +28,11 @@ export default function Suporte() {
                     <label>Mensagem</label>
                     <textarea placeholder="Descreva sua dúvida ou problema..."></textarea>
                 </div>
+<<<<<<< HEAD
                 <button type="button" className="btn btn-primary btn-full btn-space">Enviar Mensagem</button>
+=======
+                <button type="button" className="btn btn-primary btn-full" style={{ marginTop: '8px' }}>Enviar Mensagem</button>
+>>>>>>> 73b6004 (att perfil e pdf chat)
             </div>
         </div>
     )

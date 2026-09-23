@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 /* ===================================================
    CONVERSAS.CSS - Estilos da lista de mensagens
    =================================================== */
 
+=======
+>>>>>>> 73b6004 (att perfil e pdf chat)
 .conversas-list {
     max-width: 680px;
     margin: 32px auto;
@@ -94,4 +97,8 @@
 .conv-btn.deny {
     background: #fef2f2;
     color: #ef4444;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 73b6004 (att perfil e pdf chat)

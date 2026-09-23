@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 /* ===================================================
    PERFIL.CSS - Estilos do perfil público do prestador
    =================================================== */
 
+=======
+>>>>>>> 73b6004 (att perfil e pdf chat)
 .perfil-container {
     max-width: 740px;
     margin: 24px auto;
@@ -19,6 +22,7 @@
     margin-bottom: 20px;
 }
 
+<<<<<<< HEAD
 .perfil-info {
     flex: 1;
 }
@@ -29,6 +33,8 @@
     line-height: 1.6;
 }
 
+=======
+>>>>>>> 73b6004 (att perfil e pdf chat)
 .perfil-avatar {
     width: 68px;
     height: 68px;
@@ -117,4 +123,8 @@
         flex-direction: column;
         text-align: center;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 73b6004 (att perfil e pdf chat)

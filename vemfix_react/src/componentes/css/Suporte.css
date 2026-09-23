@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 /* ===================================================
    SUPORTE.CSS - Estilos da página de Suporte e FAQ
    =================================================== */
 
+=======
+>>>>>>> 73b6004 (att perfil e pdf chat)
 .info-page {
     padding: 36px 40px;
     max-width: 860px;
@@ -20,7 +23,10 @@
     font-size: 15px;
 }
 
+<<<<<<< HEAD
 /* FAQ Sanfona */
+=======
+>>>>>>> 73b6004 (att perfil e pdf chat)
 .faq-section {
     margin-bottom: 36px;
 }
@@ -74,7 +80,10 @@ details[open] .faq-arrow {
     transform: rotate(180deg);
 }
 
+<<<<<<< HEAD
 /* Bloco Fale Conosco */
+=======
+>>>>>>> 73b6004 (att perfil e pdf chat)
 .contact-box {
     background: #fff;
     border: 1px solid var(--gray-200);
@@ -98,4 +107,8 @@ details[open] .faq-arrow {
     .info-page {
         padding: 16px;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 73b6004 (att perfil e pdf chat)

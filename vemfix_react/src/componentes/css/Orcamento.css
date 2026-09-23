@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 /* ===================================================
    ORCAMENTO.CSS - Estilos da elaboração de orçamento
    =================================================== */
 
+=======
+>>>>>>> 73b6004 (att perfil e pdf chat)
 .upload-box {
     border: 2px dashed var(--gray-300);
     border-radius: var(--radius);
@@ -17,4 +20,8 @@
     border-color: var(--green);
     color: var(--green);
     background: var(--green-light);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 73b6004 (att perfil e pdf chat)

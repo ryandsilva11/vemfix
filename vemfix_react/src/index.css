@@ -140,9 +140,12 @@ nav {
 }
 
 .nav-links {
+<<<<<<< HEAD
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+=======
+>>>>>>> 73b6004 (att perfil e pdf chat)
     display: flex;
     gap: 28px;
 }
@@ -255,6 +258,7 @@ nav {
     gap: 16px;
 }
 
+<<<<<<< HEAD
 .form-row .btn {
     width: 100%;
 }
@@ -285,6 +289,8 @@ nav {
     margin-top: 8px;
 }
 
+=======
+>>>>>>> 73b6004 (att perfil e pdf chat)
 footer {
     background: var(--gray-900);
     color: #fff;
