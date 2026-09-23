@@ -22,19 +22,20 @@
     margin: 0 auto 28px;
 }
 
-.hero-btns {
+.hero-btns,
+.hero-badges {
     display: flex;
-    gap: 14px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
+.hero-btns {
+    gap: 14px;
+}
+
 .hero-badges {
-    display: flex;
     gap: 24px;
-    justify-content: center;
     margin-top: 32px;
-    flex-wrap: wrap;
     font-size: 13px;
     font-weight: 500;
     color: var(--gray-700);
@@ -43,6 +44,10 @@
 /* Seções Gerais */
 .section {
     padding: 56px 40px;
+}
+
+.section-muted {
+    background: var(--gray-100);
 }
 
 .section-title {
@@ -155,39 +160,6 @@
     line-height: 1.5;
 }
 
-/* Segurança */
-.security-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 860px;
-    margin: 0 auto;
-}
-
-.security-card {
-    background: #fff;
-    border: 1px solid var(--gray-200);
-    border-radius: var(--radius);
-    padding: 24px;
-}
-
-.security-card .sc-icon {
-    font-size: 26px;
-    margin-bottom: 10px;
-}
-
-.security-card h4 {
-    font-size: 15px;
-    font-weight: 700;
-    margin-bottom: 6px;
-}
-
-.security-card p {
-    font-size: 13px;
-    color: var(--gray-500);
-    line-height: 1.6;
-}
-
 /* Profissionais em Destaque */
 .pros-grid {
     display: flex;
@@ -247,6 +219,11 @@
     color: #f59e0b;
 }
 
+.pro-rating-sub {
+    color: var(--gray-500);
+    font-weight: 400;
+}
+
 .pro-desc {
     font-size: 13px;
     color: var(--gray-700);
@@ -265,7 +242,6 @@
     }
 
     .categories-grid,
-    .security-grid,
     .how-steps {
         grid-template-columns: 1fr;
     }

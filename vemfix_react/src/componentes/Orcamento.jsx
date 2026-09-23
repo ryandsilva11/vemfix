@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import './css/orcamento.css'
+
 export default function Orcamento() {
     return (
         <div>
@@ -36,7 +36,8 @@ export default function Orcamento() {
                         <div className="form-group">
                             <label>Fotos e Vídeos do Problema</label>
                             <div className="upload-box">
-                                <span style={{ fontSize: 24 }}>📷</span> Adicionar fotos do local
+                                <div className="upload-icon">📷</div>
+                                Adicionar fotos do local
                             </div>
                         </div>
                         <div className="form-group">
@@ -48,8 +49,8 @@ export default function Orcamento() {
                             <textarea placeholder="Detalhe o serviço planejado..."></textarea>
                         </div>
                         <div className="form-row">
-                            <Link to="/Chat" className="btn btn-primary" style={{ flex: 1 }}>Enviar ao Cliente</Link>
-                            <Link to="/Chat" className="btn btn-secondary" style={{ flex: 1 }}>Salvar Rascunho</Link>
+                            <Link to="/Chat" className="btn btn-primary">Enviar ao Cliente</Link>
+                            <Link to="/Chat" className="btn btn-secondary">Salvar Rascunho</Link>
                         </div>
                     </div>
                 </div>

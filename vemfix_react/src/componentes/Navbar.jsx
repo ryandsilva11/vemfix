@@ -6,7 +6,7 @@ export default function Navbar() {
                 <div className="logo-icon">V</div>
                 VemFix
             </Link>
-            <div className="nav-links" style={{ position: "absolute", left: "50%", transform: "translateX(-50%)" }}>
+            <div className="nav-links">
                 <Link to="/">Início</Link>
                 <Link to="/Busca">Busca</Link>
                 <Link to="/Suporte">Suporte</Link>

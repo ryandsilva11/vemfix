@@ -19,6 +19,16 @@
     margin-bottom: 20px;
 }
 
+.perfil-info {
+    flex: 1;
+}
+
+.perfil-sobre {
+    font-size: 14px;
+    color: var(--gray-700);
+    line-height: 1.6;
+}
+
 .perfil-avatar {
     width: 68px;
     height: 68px;

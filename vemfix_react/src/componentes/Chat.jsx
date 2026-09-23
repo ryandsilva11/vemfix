@@ -1,19 +1,20 @@
 import { Link } from 'react-router-dom'
-import './css/chat.css'
+import './css/Chat.css'
 import MessageReci from './MessageReci.jsx'
 import MessageSent from './MessageSent.jsx'
+
 export default function Chat() {
     return (
         <div className="chat-container">
             <div className="chat-header">
-                <Link to="/Conversa" style={{ fontSize: "18px", color: "#9ca3af" }}>←</Link>
+                <Link to="/Conversa" className="chat-back-btn">←</Link>
                 <div className="av" style={{ background: "#059669" }}>CS</div>
                 <div>
                     <h4>Carlos Silva</h4>
                     <p>Online</p>
                 </div>
             </div>
-            <div className='chat-messages'>
+            <div className="chat-messages">
                 <MessageReci msg="Olá! Vi que você precisa de um encanador. Como posso ajudar?" hora="09:15" />
                 <MessageSent msg="Oi Carlos! Tenho um vazamento na cozinha, embaixo da pia." hora="09:20" />
                 <MessageReci msg="Entendi. Pelo que descreve, pode ser a conexão do sifão. Geralmente é um reparo simples." hora="09:15" />
@@ -29,4 +30,4 @@ export default function Chat() {
             </div>
         </div>
     )
-} ''
+}

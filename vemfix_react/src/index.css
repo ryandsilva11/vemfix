@@ -140,6 +140,9 @@ nav {
 }
 
 .nav-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     gap: 28px;
 }
@@ -250,6 +253,36 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
+}
+
+.form-row .btn {
+    width: 100%;
+}
+
+.upload-box {
+    border: 2px dashed var(--gray-300);
+    border-radius: var(--radius);
+    padding: 18px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--gray-500);
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.upload-box:hover {
+    border-color: var(--green);
+    color: var(--green);
+    background: var(--green-light);
+}
+
+.upload-icon {
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
+.btn-space {
+    margin-top: 8px;
 }
 
 footer {

@@ -21,6 +21,12 @@
     background: #fff;
 }
 
+.chat-back-btn {
+    font-size: 18px;
+    color: #9ca3af;
+    text-decoration: none;
+}
+
 .chat-header .av {
     width: 36px;
     height: 36px;
