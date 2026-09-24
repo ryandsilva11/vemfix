@@ -10,10 +10,6 @@ import Perfil from './componentes/Perfil.jsx'
 import Post from './componentes/PostDo.jsx'
 import Orcamento from './componentes/Orcamento.jsx'
 import Cadastro from './componentes/Cadastro.jsx'
-<<<<<<< HEAD
-=======
-import EditarPerfil from './componentes/EditarPerfil.jsx'
->>>>>>> 73b6004 (att perfil e pdf chat)
 export default function App() {
 
   return (
@@ -29,10 +25,6 @@ export default function App() {
         <Route path="/Post" element={<Post />} />
         <Route path="/Orcamento" element={<Orcamento />} />
         <Route path="/Cadastro" element={<Cadastro />} />
-<<<<<<< HEAD
-=======
-        <Route path="/EditarPerfil" element={<EditarPerfil />} />
->>>>>>> 73b6004 (att perfil e pdf chat)
       </Routes>
       <Footer />
     </BrowserRouter>

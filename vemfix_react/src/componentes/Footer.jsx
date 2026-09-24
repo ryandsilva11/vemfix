@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 import { Link } from 'react-router-dom'
 
-=======
->>>>>>> 73b6004 (att perfil e pdf chat)
 export default function Footer() {
     return (
         <footer>
@@ -14,7 +11,6 @@ export default function Footer() {
                 <div className="footer-col">
                     <h5>Plataforma</h5>
                     <ul>
-<<<<<<< HEAD
                         <li><Link to="/Busca">Buscar Serviços</Link></li>
                         <li><Link to="/Cadastro">Cadastrar-se</Link></li>
                         <li><a href="#garantias">Garantias</a></li>
@@ -38,31 +34,6 @@ export default function Footer() {
                 </div>
             </div>
             <div className="footer-bottom">© 2025 VemFix – Todos os direitos reservados</div>
-=======
-                        <li><a href="pages/busca.html">Buscar Serviços</a></li>
-                        <li><a href="pages/cadastro.html">Cadastrar-se</a></li>
-                        <li><a href="pages/garantias.html">Garantias</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h5>Suporte</h5>
-                    <ul>
-                        <li><a href="pages/suporte.html">Central de Ajuda</a></li>
-                        <li><a href="pages/suporte.html">Fale Conosco</a></li>
-                        <li><a href="pages/suporte.html">Política de Reembolso</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h5>Políticas</h5>
-                    <ul>
-                        <li><a href="pages/garantias.html">Termos de uso</a></li>
-                        <li><a href="pages/garantias.html">Privacidade</a></li>
-                        <li><a href="pages/garantias.html">Responsabilidades</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">© 2025 VemFix – Todos os direitos reservados</div>
->>>>>>> 73b6004 (att perfil e pdf chat)
         </footer>
     )
 }

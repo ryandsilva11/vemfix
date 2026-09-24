@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 /* ===================================================
    CADASTRO.CSS - Estilos da alternância de abas de cadastro
    =================================================== */
 
-=======
->>>>>>> 73b6004 (att perfil e pdf chat)
 .tabs {
     display: flex;
     background: var(--gray-100);
@@ -25,10 +22,7 @@
     transition: 0.2s;
 }
 
-<<<<<<< HEAD
 /* Alternância entre Sou Cliente e Sou Prestador via CSS puro */
-=======
->>>>>>> 73b6004 (att perfil e pdf chat)
 #tab-opt-c:checked~.tabs label[for="tab-opt-c"],
 #tab-opt-p:checked~.tabs label[for="tab-opt-p"] {
     background: #fff;
@@ -75,24 +69,4 @@
 .form-footer a {
     color: var(--green);
     font-weight: 600;
-<<<<<<< HEAD
 }
-=======
-}
-
-.specialty-options {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.specialty-options label {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.specialty-options input[type="checkbox"] {
-    width: auto;
-}
->>>>>>> 73b6004 (att perfil e pdf chat)

@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 /* ===================================================
    BUSCA.CSS - Estilos da página de Busca e Feed
    =================================================== */
 
-=======
->>>>>>> 73b6004 (att perfil e pdf chat)
 .feed-header {
     background: #fff;
     border-bottom: 1px solid var(--gray-200);
@@ -36,7 +33,6 @@
     width: 100%;
 }
 
-<<<<<<< HEAD
 .tipo-wrap {
     display: flex;
     align-items: center;
@@ -58,8 +54,6 @@
     outline: none;
 }
 
-=======
->>>>>>> 73b6004 (att perfil e pdf chat)
 .filter-chips {
     display: flex;
     gap: 8px;
@@ -84,10 +78,7 @@
     border-color: var(--green);
 }
 
-<<<<<<< HEAD
 /* Barra superior de profissionais em destaque */
-=======
->>>>>>> 73b6004 (att perfil e pdf chat)
 .feed-top-pros {
     display: flex;
     gap: 12px;
@@ -109,11 +100,8 @@
     white-space: nowrap;
     transition: 0.2s;
     font-size: 12px;
-<<<<<<< HEAD
     text-decoration: none;
     color: inherit;
-=======
->>>>>>> 73b6004 (att perfil e pdf chat)
 }
 
 .top-pro-chip:hover {
@@ -132,7 +120,6 @@
     font-size: 11px;
 }
 
-<<<<<<< HEAD
 .top-pro-info {
     display: flex;
     gap: 10px;
@@ -148,8 +135,6 @@
 }
 
 /* Feed de Posts */
-=======
->>>>>>> 73b6004 (att perfil e pdf chat)
 .feed-list {
     padding: 24px 40px;
     max-width: 680px;
@@ -163,22 +148,17 @@
     background: #fff;
     border: 1px solid var(--gray-200);
     border-radius: var(--radius);
-<<<<<<< HEAD
     padding: 20px;
     transition: 0.2s;
 }
 
 .feed-post:hover {
     box-shadow: var(--shadow-sm);
-=======
-    overflow: hidden;
->>>>>>> 73b6004 (att perfil e pdf chat)
 }
 
 .post-header {
     display: flex;
     align-items: center;
-<<<<<<< HEAD
     justify-content: space-between;
     margin-bottom: 12px;
 }
@@ -186,29 +166,13 @@
 .post-header .av {
     width: 36px;
     height: 36px;
-=======
-    gap: 12px;
-    padding: 16px 20px;
-}
-
-.post-header .av {
-    width: 40px;
-    height: 40px;
->>>>>>> 73b6004 (att perfil e pdf chat)
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-<<<<<<< HEAD
     font-weight: 700;
     color: #fff;
     font-size: 13px;
-=======
-    font-size: 13px;
-    font-weight: 700;
-    color: #fff;
-    flex-shrink: 0;
->>>>>>> 73b6004 (att perfil e pdf chat)
 }
 
 .post-header .info h4 {
@@ -222,19 +186,12 @@
 }
 
 .post-header .rating {
-<<<<<<< HEAD
     font-size: 13px;
     font-weight: 600;
-=======
-    margin-left: auto;
-    font-size: 13px;
-    font-weight: 700;
->>>>>>> 73b6004 (att perfil e pdf chat)
     color: #f59e0b;
 }
 
 .post-caption {
-<<<<<<< HEAD
     font-size: 14px;
     color: var(--gray-900);
     margin-bottom: 12px;
@@ -275,52 +232,10 @@
 }
 
 /* Botão Flutuante (FAB) */
-=======
-    padding: 0 20px 12px;
-    font-size: 14px;
-    color: var(--gray-700);
-    line-height: 1.5;
-}
-
-.post-img {
-    width: 100%;
-    aspect-ratio: 16/9;
-    background: var(--gray-200);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-}
-
-.post-actions {
-    padding: 12px 20px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    border-top: 1px solid var(--gray-100);
-    font-size: 13px;
-    color: var(--gray-500);
-}
-
-.post-actions button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: inherit;
-    font: inherit;
-}
-
-.post-actions a:hover,
-.post-actions button:hover {
-    color: var(--green);
-}
-
->>>>>>> 73b6004 (att perfil e pdf chat)
 .fab {
     position: fixed;
     bottom: 32px;
     right: 32px;
-<<<<<<< HEAD
     width: 56px;
     height: 56px;
     border-radius: 50%;
@@ -335,63 +250,17 @@
     border: none;
     transition: 0.2s;
     text-decoration: none;
-=======
-    width: 50px;
-    height: 50px;
-    background: var(--green);
-    border-radius: 50%;
-    color: #fff;
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 18px rgba(26, 158, 110, 0.4);
-    transition: 0.2s;
-    z-index: 200;
->>>>>>> 73b6004 (att perfil e pdf chat)
 }
 
 .fab:hover {
     background: var(--green-dark);
-<<<<<<< HEAD
     transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
-=======
-    transform: scale(1.06);
-}
-
-.edit-profile-fab {
-    bottom: 92px;
-}
-
-@media (max-width: 768px) {
-
->>>>>>> 73b6004 (att perfil e pdf chat)
     .feed-header,
     .feed-top-pros,
     .feed-list {
         padding: 16px;
     }
-<<<<<<< HEAD
 }
-=======
-}
-
-.tipo-select {
-    .tipo-select {
-        border: 1px solid var(--gray-300);
-        border-radius: var(--radius-sm);
-        padding: 8px 12px;
-        background: #fff;
-        font-size: 13px;
-    }
-}
-
-.tipo-label {
-    font-size: 13px;
-    color: var(--gray-700);
-    font-weight: 600;
-}
->>>>>>> 73b6004 (att perfil e pdf chat)

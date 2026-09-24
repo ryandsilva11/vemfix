@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 /* ===================================================
    CHAT.CSS - Estilos da janela de bate-papo
    =================================================== */
 
-=======
->>>>>>> 73b6004 (att perfil e pdf chat)
 .chat-container {
     display: flex;
     flex-direction: column;
@@ -24,15 +21,12 @@
     background: #fff;
 }
 
-<<<<<<< HEAD
 .chat-back-btn {
     font-size: 18px;
     color: #9ca3af;
     text-decoration: none;
 }
 
-=======
->>>>>>> 73b6004 (att perfil e pdf chat)
 .chat-header .av {
     width: 36px;
     height: 36px;
@@ -138,8 +132,4 @@
 .chat-icon-btn.send {
     background: var(--green);
     color: #fff;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 73b6004 (att perfil e pdf chat)
