@@ -10,6 +10,7 @@ import Perfil from './componentes/Perfil.jsx'
 import Post from './componentes/PostDo.jsx'
 import Orcamento from './componentes/Orcamento.jsx'
 import Cadastro from './componentes/Cadastro.jsx'
+import Editar from './componentes/Editar.jsx'
 export default function App() {
 
   return (
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/Post" element={<Post />} />
         <Route path="/Orcamento" element={<Orcamento />} />
         <Route path="/Cadastro" element={<Cadastro />} />
+        <Route path="/Editar" element={<Editar />} />
       </Routes>
       <Footer />
     </BrowserRouter>
