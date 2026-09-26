@@ -23,6 +23,13 @@ export default function Editar() {
                         <option value="limpeza">Serviço de Limpeza</option>
                         <option value="outro">Outro</option>
                     </select>
+
+                    <div style={{ margin: '18px 0 10px', borderTop: '1px solid rgba(255, 255, 255, 0.25)', paddingTop: '14px', fontSize: '13px', fontWeight: '700' }}>
+                        Alterar Senha
+                    </div>
+                    <input className="edit-field" type="password" placeholder="Nova senha" />
+                    <input className="edit-field" type="password" placeholder="Confirmar nova senha" />
+
                     <div style={{ display: 'flex', gap: '12px', marginTop: '16px' }}>
                         <button type="button" className="btn btn-danger" style={{ flex: '1' }}>Inativar conta</button>
                         <Link to="/" className="btn btn-secondary" style={{ flex: '1' }}>Salvar e Sair</Link>

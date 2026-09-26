@@ -1,6 +1,7 @@
 import "./css/Busca.css"
 import DestaqueBusca from "./DestaqueBusca"
 import Post from "./Post"
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const DESTAQUES = [
@@ -32,6 +33,8 @@ const FILTROS = [
 ]
 
 export default function Busca() {
+    const [outroTipo, setOutroTipo] = useState(false)
+
     return (
         <div>
             <div className="feed-header">
@@ -41,7 +44,7 @@ export default function Busca() {
                 </div>
                 <div className="tipo-wrap">
                     <label htmlFor="tipo-select" className="tipo-label">Tipo</label>
-                    <select id="tipo-select" className='tipo-select'>
+                    <select id="tipo-select" className='tipo-select' onChange={(e) => setOutroTipo(e.target.value === "Outro")}>
                         <option value="">Todos</option>
                         <option value="Encanador">Encanador</option>
                         <option value="Eletricista">Eletricista</option>
@@ -51,7 +54,16 @@ export default function Busca() {
                         <option value="Pedreiro">Pedreiro</option>
                         <option value="Ar condicionado">Ar condicionado</option>
                         <option value="Chaveiro">Chaveiro</option>
+                        <option value="Outro">Outro</option>
                     </select>
+                    {outroTipo && (
+                        <input
+                            type="text"
+                            placeholder="Digite o tipo..."
+                            className="tipo-select"
+                            style={{ marginLeft: "8px" }}
+                        />
+                    )}
                 </div>
                 <div className="filter-chips">
                     {FILTROS.map((f) => (

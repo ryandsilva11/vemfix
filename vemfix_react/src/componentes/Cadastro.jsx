@@ -1,6 +1,8 @@
+import { useState } from "react"
 import "./css/Cadastro.css"
 import { Link } from "react-router-dom"
 export default function Cadastro() {
+    const [Outro, setOutro] = useState(false)
     return (
         <div>
             <Link to="/" className="back-btn">← Voltar</Link>
@@ -54,7 +56,7 @@ export default function Cadastro() {
                             </div>
                             <div className="form-group">
                                 <label>Categoria de Serviço</label>
-                                <select>
+                                <select onChange={(e) => setOutro(e.target.value === "Outro")}>
                                     <option>Encanador</option>
                                     <option>Eletricista</option>
                                     <option>Pintor</option>
@@ -63,7 +65,16 @@ export default function Cadastro() {
                                     <option>Pedreiro</option>
                                     <option>Ar condicionado</option>
                                     <option>Chaveiro</option>
+                                    <option>Outro</option>
                                 </select>
+                                {Outro && (
+                                    <input
+                                        type="text"
+                                        placeholder="Digite sua especialidade..."
+                                        style={{ marginTop: '8px' }}
+                                    />
+                                )}
+
                             </div>
                             <div className="form-group">
                                 <label>Breve descrição da experiência</label>
